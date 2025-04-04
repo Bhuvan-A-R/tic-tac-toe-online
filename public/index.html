@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiplayer Tic Tac Toe</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" defer></script>
+    <link rel="stylesheet" href="../src/style.css" />
+    <script src="../src/script.js" defer></script>
+  </head>
+  <body>
+    <div class="winner-banner" id="winnerBanner"></div>
+    <div class="game" id="gameContainer">
+      <h1>Multiplayer Tic Tac Toe</h1>
+      <div class="board" id="board"></div>
+      <div id="status">Connecting...</div>
+      <button onclick="resetGame()">🔁 Restart Game</button>
+    </div>
+    <footer>© 2025 Multiplayer Tic Tac Toe. All rights reserved.</footer>
+  </body>
+</html>
