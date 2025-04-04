@@ -5,9 +5,12 @@ const path = require("path");
 
 const app = express();
 const server = http.createServer(app);
+
 const io = new Server(server, {
   cors: { origin: "*" },
+  transports: ["polling"], // ✅ Forces long polling (works on Vercel)
 });
+
 
 let rooms = {};
 

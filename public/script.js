@@ -1,4 +1,4 @@
-const socket = io("http://localhost:3000");
+const socket = io();
 const boardElement = document.getElementById("board");
 const statusElement = document.getElementById("status");
 const gameContainer = document.getElementById("gameContainer");
